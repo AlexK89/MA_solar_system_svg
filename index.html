@@ -13,6 +13,9 @@
             <stop offset="80%" style="stop-color:rgb(255,203,39);stop-opacity: .9" />
             <stop offset="100%" style="stop-color:rgb(255,203,39);stop-opacity:1" />
         </radialGradient>
+        <radialGradient id="sun_shadow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+            <stop offset="0%" style="stop-color:rgb(255,0,0); stop-opacity:0.5" />
+        </radialGradient>
         <linearGradient id="neptun" x1="0%" y1="0%" x2="0%" y2="100%">
             <stop offset="30%" style="stop-color:rgb(125,147,204);stop-opacity:1" />
             <stop offset="50%" style="stop-color:rgb(93,113,163);stop-opacity:1" />
@@ -31,6 +34,12 @@
             <stop offset="78%" style="stop-color:rgb(112,95,80);stop-opacity:1" />
             <stop offset="80%" style="stop-color:rgb(121,105,85);stop-opacity:1" />
             <stop offset="100%" style="stop-color:rgb(122,111,84);stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="mars" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#877871" />
+            <stop offset="15%" style="stop-color:#ea7e5a" />
+            <stop offset="60%" style="stop-color:#8a614e" />
+            <stop offset="850%" style="stop-color:#877871" />
         </linearGradient>
         <linearGradient id="earth" x1="0%" y1="0%" x2="0%" y2="100%">
             <stop offset="0%" style="stop-color:rgb(251,255,255);stop-opacity:1" />
@@ -52,9 +61,11 @@
             <stop offset="90%" style="stop-color:#76615a" />
         </linearGradient>
         <linearGradient id="venus" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style="stop-color:rgb(173,111,81);stop-opacity:1" />
-            <stop offset="20%" style="stop-color:#9c4820" />
-            <stop offset="60%" style="stop-color:#b4684a" />
+            <stop offset="0%" style="stop-color:#c6a361" />
+            <stop offset="40%" style="stop-color:#ffdb7d" />
+            <stop offset="60%" style="stop-color:#d69636" />
+            <stop offset="70%" style="stop-color:#ffdb7d" />
+            <stop offset="85%" style="stop-color:#c6a361" />
         </linearGradient>
         <linearGradient id="saturn_ring" x1="0%" y1="0%" x2="0%" y2="100%">
             <stop offset="0%" style="stop-color:rgb(173,111,81);stop-opacity:0" />
@@ -117,27 +128,30 @@
                     stroke: #fff;
                 ">
         </circle>
-        <circle class="circle" cx="50%" cy="50%" r="85" fill="url(#sun)" />
-        <circle class="circle neptune" cx="50%" cy="50%" r="35" fill="url(#neptun)"></circle>
-        <circle class="circle uranus" cx="50%" cy="50%" r="35" fill="url(#uranus)"></circle>
-        <circle class="circle saturn" cx="50%" cy="50%" r="60" fill="url(#saturn)"></circle>
-        <ellipse class="saturn saturn_ring" cx="50%" cy="50%" rx="80" ry="20" stroke="url(#saturn_ring)" stroke-width="15" fill="none"></ellipse>
-        <circle class="circle jupiter" cx="50%" cy="50%" r="64" fill="url(#jupiter)">
-        </circle>
-        <circle class="circle mars" cx="50%" cy="50%" r="5"
-                style="
-                    fill: #bb341f;
-                ">
-        </circle>
 
-        <circle class="earth" cx="50%" cy="50%" r="15" fill="url(#earth)"></circle>
-        <circle class="circle venus" cx="50%" cy="50%" r="15" fill="url(#venus)">
-        </circle>
+        <circle class="circle" cx="50%" cy="50%" r="85" fill="url(#sun)" fill="url(#sun_shadow)"></circle>
         <circle class="circle mercury" cx="50%" cy="50%" r="5"
                 style="
                     fill: #ffebdc;
                 ">
         </circle>
+        <circle class="circle venus" cx="50%" cy="50%" r="15" fill="url(#venus)"></circle>
+        <circle class="earth" cx="50%" cy="50%" r="15" fill="url(#earth)"></circle>
+        <circle class="mars" cx="50%" cy="50%" r="10" fill="url(#mars)"></circle>
+        <circle class="circle jupiter" cx="50%" cy="50%" r="64" fill="url(#jupiter)"></circle>
+        <circle class="circle saturn" cx="50%" cy="50%" r="60" fill="url(#saturn)"></circle>
+        <ellipse class="saturn saturn_ring" cx="50%" cy="50%" rx="80" ry="20" stroke="url(#saturn_ring)" stroke-width="15" fill="none"></ellipse>
+        <circle class="circle uranus" cx="50%" cy="50%" r="35" fill="url(#uranus)"></circle>
+        <circle class="circle neptune" cx="50%" cy="50%" r="35" fill="url(#neptun)"></circle>
+
+
+
+
+
+
+
+
+
     </svg>
 </body>
 </html>

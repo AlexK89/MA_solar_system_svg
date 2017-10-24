@@ -19,35 +19,35 @@ body {
 }
 .neptune {
     animation-name: neptune;
-    animation-duration: 10s;
+    animation-duration: 600s;
 }
 .uranus {
     animation-name: uranus;
-    animation-duration: 9s;
+    animation-duration: 300s;
 }
 .saturn {
     animation-name: saturn;
-    animation-duration: 7s;
+    animation-duration: 120s;
 }
 .jupiter {
     animation-name: jupiter;
-    animation-duration: 8s;
+    animation-duration: 48s;
 }
 .mars {
     animation-name: mars;
-    animation-duration: 5s;
+    animation-duration: 8s;
 }
 .earth {
     animation-name: earth;
-    animation-duration: 6s;
+    animation-duration: 4s;
 }
 .venus {
     animation-name: venus;
-    animation-duration: 4s;
+    animation-duration: 3s;
 }
 .mercury {
     animation-name: mercury;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 .moon {
     animation-name: moon;
