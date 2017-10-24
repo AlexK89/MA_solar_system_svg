@@ -1,0 +1,127 @@
+body {
+    background-color: #2a3d40;
+}
+.solar {
+    display: block;
+    margin:  20px auto;
+}
+.neptune,
+.uranus,
+.saturn,
+.jupiter,
+.mars,
+.earth,
+.venus,
+.mercury,
+.moon {
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.neptune {
+    animation-name: neptune;
+    animation-duration: 10s;
+}
+.uranus {
+    animation-name: uranus;
+    animation-duration: 9s;
+}
+.saturn {
+    animation-name: saturn;
+    animation-duration: 7s;
+}
+.jupiter {
+    animation-name: jupiter;
+    animation-duration: 8s;
+}
+.mars {
+    animation-name: mars;
+    animation-duration: 5s;
+}
+.earth {
+    animation-name: earth;
+    animation-duration: 6s;
+}
+.venus {
+    animation-name: venus;
+    animation-duration: 4s;
+}
+.mercury {
+    animation-name: mercury;
+    animation-duration: 2s;
+}
+.moon {
+    animation-name: moon;
+    animation-duration: 2s;
+}
+@keyframes neptune {
+    from {
+        transform: rotate(0deg) translateX(460px) rotate(0deg);
+    }
+    to   {
+        transform: rotate(360deg) translateX(460px) rotate(-360deg);
+    }
+}
+@keyframes uranus {
+    from {
+        transform: rotate(0deg) translateX(418px) rotate(0deg);
+    }
+    to   {
+        transform: rotate(360deg) translateX(418px) rotate(-360deg);
+    }
+}
+@keyframes saturn {
+    from {
+        transform: rotate(0deg) translateX(338px) rotate(0deg);
+    }
+    to   {
+        transform: rotate(360deg) translateX(338px) rotate(-360deg);
+    }
+}
+@keyframes jupiter {
+    from {
+        transform: rotate(0deg) translateX(238px) rotate(0deg);
+    }
+    to   {
+        transform: rotate(360deg) translateX(238px) rotate(-360deg);
+    }
+}
+@keyframes mars {
+    from {
+        transform: rotate(0deg) translateX(188px) rotate(0deg);
+    }
+    to   {
+        transform: rotate(360deg) translateX(188px) rotate(-360deg);
+    }
+}
+@keyframes earth {
+    from {
+        transform: rotate(0deg) translateX(160px) rotate(0deg);
+    }
+    to   {
+        transform: rotate(360deg) translateX(160px) rotate(-360deg);
+    }
+}
+@keyframes venus {
+    from {
+        transform: rotate(0deg) translateX(126px) rotate(0deg);
+    }
+    to   {
+        transform: rotate(360deg) translateX(126px) rotate(-360deg);
+    }
+}
+@keyframes mercury {
+    from {
+        transform: rotate(0deg) translateX(106px) rotate(0deg);
+    }
+    to   {
+        transform: rotate(360deg) translateX(106px) rotate(-360deg);
+    }
+}
+@keyframes moon {
+    from {
+        transform: rotate(0deg) translateX(25px) rotate(0deg);
+    }
+    to   {
+        transform: rotate(360deg) translateX(25px) rotate(-360deg);
+    }
+}
